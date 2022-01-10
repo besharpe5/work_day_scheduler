@@ -23,7 +23,7 @@
     rel="stylesheet" 
     />
     <link 
-    href="style.css"
+    href="./Develop/css/style.css"
     rel="stylesheet"  
     />
     <title>Work Day Scheduler</title>
@@ -36,10 +36,55 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+        <div class="row time-block" id="09am">
+            <p class="hour col-2">9:00 AM</p>
+            <textarea class="col event-input" id="row-9am"></textarea>
+            <button class="btn saveBtn"><span class='oi oi-hard-drive'></span></button>
+          </div>
+          <div class="row time-block" id="10am">
+            <p class="hour col-2">10:00 AM</p>
+            <textarea class="col event-input" id="row-10am"></textarea>
+            <button class="btn saveBtn"><span class='oi oi-hard-drive'></span></button>
+          </div>
+          <div class="row time-block" id="11am">
+            <p class="hour col-2">11:00 AM</p>
+            <textarea class="col event-input" id="row-11am"></textarea>
+            <button class="btn saveBtn"><span class='oi oi-hard-drive'></span></button>
+          </div>
+          <div class="row time-block"id="12pm">
+            <p class="hour col-2">12:00 PM</p>
+            <textarea class="col event-input" id="row-12pm"></textarea>
+            <button class="btn saveBtn"><span class='oi oi-hard-drive'></span></button>
+          </div>
+          <div class="row time-block" id="13pm">
+            <p class="hour col-2">1:00 PM</p>
+            <textarea class="col event-input" id="row-1pm"></textarea>
+            <button class="btn saveBtn"><span class='oi oi-hard-drive'></span></button>
+          </div>
+          <div class="row time-block" id="14pm">
+            <p class="hour col-2">2:00 PM</p>
+            <textarea class="col event-input" id="row-2pm"></textarea>
+            <button class="btn saveBtn"><span class='oi oi-hard-drive'></span></button>
+          </div>
+          <div class="row time-block" id="15pm">
+            <p class="hour col-2">3:00 PM</p>
+            <textarea class="col event-input" id="row-3pm"></textarea>
+            <button class="btn saveBtn"><span class='oi oi-hard-drive'></span></button>
+          </div>
+          <div class="row time-block" id="16pm">
+            <p class="hour col-2">4:00 PM</p>
+            <textarea class="col event-input" id="row-4pm"></textarea>
+            <button class="btn saveBtn"><span class='oi oi-hard-drive'></span></button>
+          </div>
+          <div class="row time-block" id= "17pm">
+            <p class="hour col-2">5:00 PM</p>
+            <textarea type="text" class="col event-input" id="row-5pm"></textarea>
+            <button class="btn saveBtn"><span class='oi oi-hard-drive'></span></button>
+          </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Develop/js/script.js"></script>
   </body>
 </html>
