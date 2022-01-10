@@ -1,8 +1,8 @@
 var events = {};
-var currentDay = moment().format("dddd, MMMM D, YYYY h:mm A");
+var currentDate = moment().format("dddd, MMMM D, YYYY h:mm A");
 
 // this will display the current date and time.
-$("#currentDay").replaceWith(currentDay);
+$("#currentDay").replaceWith(currentDate);
 
 //this will load events from local storage
 var displayEvents = function() {
@@ -33,6 +33,7 @@ var saveEvents = function() {
     localStorage.setItem("events", JSON.stringify(events));
 };
 
+// clicking the save button will update the even
 $(".saveBtn").click(function() {
     var eventInputNineAm = document.getElementById("row-nineAm").value;
     events.nineAm = eventInputNineAm;
@@ -88,7 +89,7 @@ setInterval(function(){
     checkTheTime();
 },(1000 * 60) * 5);
 
-saveEvents();
+displayEvents();
 
 
 
